@@ -1,452 +1,683 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional Virtual Assistant Portfolio — Organized, reliable, and detail-oriented VA ready to help your business thrive." />
-  <title>Ronz | Virtual Assistant Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional Virtual Assistant Portfolio — Organized, reliable, and detail-oriented VA ready to help your business thrive."
+    />
+    <title>Shaira | Virtual Assistant Portfolio</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== PARTICLE CANVAS ===== -->
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
-<!-- ===== PARTICLE CANVAS ===== -->
-<canvas id="particle-canvas" aria-hidden="true"></canvas>
-
-<!-- ===== NAVBAR ===== -->
-<nav id="navbar" role="navigation" aria-label="Main navigation">
-  <a href="#hero" class="nav-logo" aria-label="Home">Ronz<span style="color:var(--cyan)">.</span></a>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#strengths">Strengths</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#tools">Tools</a></li>
-    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-  </ul>
-  <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</nav>
-
-<!-- ===== HERO ===== -->
-<section id="hero" aria-label="Introduction">
-  <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
-  <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
-
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="dot" aria-hidden="true"></span>
-      Available for new clients
-    </div>
-    <p class="hero-greeting">Hello, I'm</p>
-    <h1 class="hero-name">Ronz</h1>
-    <div class="hero-title-wrapper">
-      <span class="static">Your </span><span id="typewriter" aria-live="polite"></span><span class="cursor" aria-hidden="true"></span>
-    </div>
-    <p class="hero-description">
-      A dedicated, detail-oriented Virtual Assistant passionate about helping business owners manage daily tasks efficiently — so you can focus on growing what matters most.
-    </p>
-    <div class="hero-buttons">
-      <a href="#services" class="btn-primary">
-        <span aria-hidden="true">✦</span> Explore Services
-      </a>
-      <a href="#contact" class="btn-secondary">
-        <span aria-hidden="true">✉</span> Let's Connect
-      </a>
-    </div>
-  </div>
-
-  <div class="hero-scroll-hint" aria-hidden="true">
-    <span>Scroll</span>
-    <div class="scroll-mouse">
-      <div class="scroll-wheel"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ABOUT ===== -->
-<section id="about" aria-labelledby="about-heading">
-  <div class="container">
-    <div class="about-grid">
-
-      <div class="about-visual reveal-left">
-        <div class="about-avatar-wrapper">
-          <div class="about-ring" aria-hidden="true"></div>
-          <div class="about-ring about-ring-2" aria-hidden="true"></div>
-          <div class="about-avatar" role="img" aria-label="Virtual Assistant avatar">💼</div>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card reveal delay-2">
-            <span class="stat-number" data-count="100" data-suffix="%">0%</span>
-            <span class="stat-label">Reliability</span>
-          </div>
-          <div class="stat-card reveal delay-3">
-            <span class="stat-number" data-count="24" data-suffix="h">0h</span>
-            <span class="stat-label">Turnaround</span>
-          </div>
-          <div class="stat-card reveal delay-4">
-            <span class="stat-number" data-count="10" data-suffix="+">0+</span>
-            <span class="stat-label">Tools Mastered</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-text">
-        <div class="section-tag reveal">About Me</div>
-        <h2 class="section-title reveal" id="about-heading">
-          Driven to Help You <span>Do More</span>
-        </h2>
-        <p class="reveal">
-          I am a dedicated and detail-oriented Virtual Assistant with a strong passion for helping business owners and professionals manage their daily tasks efficiently. While I'm new to the industry, I've gained valuable experience and honed practical skills through dedicated practice and self-study.
-        </p>
-        <p class="reveal delay-1">
-          Being organized comes naturally to me — I learn quickly, and I'm committed to providing work that's both precise and always delivered when promised. My aim is simple: <strong style="color:var(--purple-light)">I manage the tasks that take up too much of your day</strong>, giving you the freedom to focus on expanding your business and focusing on your own expertise.
-        </p>
-        <div class="about-highlights reveal delay-2">
-          <div class="highlight-item"><span class="icon">✅</span> Fast learner & self-starter</div>
-          <div class="highlight-item"><span class="icon">📋</span> Naturally organized</div>
-          <div class="highlight-item"><span class="icon">🎯</span> Deadline-driven</div>
-          <div class="highlight-item"><span class="icon">💬</span> Strong communicator</div>
-          <div class="highlight-item"><span class="icon">🔍</span> Attentive to detail</div>
-          <div class="highlight-item"><span class="icon">🤝</span> Reliable long-term partner</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== STRENGTHS ===== -->
-<section id="strengths" aria-labelledby="strengths-heading">
-  <div class="container">
-    <div style="text-align:center; max-width:600px; margin:0 auto;">
-      <div class="section-tag reveal">Key Strengths</div>
-      <h2 class="section-title reveal" id="strengths-heading">What Sets Me <span>Apart</span></h2>
-      <p class="section-subtitle reveal">
-        Core qualities that make every collaboration smooth, productive, and worry-free.
-      </p>
-    </div>
-
-    <div class="strengths-grid">
-
-      <div class="strength-card reveal delay-1">
-        <div class="strength-icon icon-purple">💬</div>
-        <h3 class="strength-title">Clear Communication</h3>
-        <p class="strength-desc">Strong written and verbal English skills ensure every message, email, and document lands with clarity and professionalism.</p>
-      </div>
-
-      <div class="strength-card reveal delay-2">
-        <div class="strength-icon icon-cyan">🗂️</div>
-        <h3 class="strength-title">Highly Organized</h3>
-        <p class="strength-desc">Natural affinity for structure — from filing systems to calendar management — means nothing slips through the cracks.</p>
-      </div>
-
-      <div class="strength-card reveal delay-3">
-        <div class="strength-icon icon-amber">🎯</div>
-        <h3 class="strength-title">Proactive Attitude</h3>
-        <p class="strength-desc">Anticipating needs before they arise and taking initiative to keep projects moving forward without prompting.</p>
-      </div>
-
-      <div class="strength-card reveal delay-4">
-        <div class="strength-icon icon-green">⏰</div>
-        <h3 class="strength-title">Deadline-Driven</h3>
-        <p class="strength-desc">Consistently meeting deadlines with precision — you can count on deliverables arriving on time, every time.</p>
-      </div>
-
-      <div class="strength-card reveal delay-5">
-        <div class="strength-icon icon-pink">🔍</div>
-        <h3 class="strength-title">Attentive to Detail</h3>
-        <p class="strength-desc">Meticulous review of every task ensures accuracy and quality, catching errors before they become problems.</p>
-      </div>
-
-      <div class="strength-card reveal delay-6">
-        <div class="strength-icon icon-blue">📈</div>
-        <h3 class="strength-title">Fast Learner</h3>
-        <p class="strength-desc">Quick to adapt to new tools, workflows, and industries — minimizing ramp-up time and maximizing impact from day one.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVICES ===== -->
-<section id="services" aria-labelledby="services-heading">
-  <div class="container">
-    <div class="services-header">
-      <div>
-        <div class="section-tag reveal">What I Can Do</div>
-        <h2 class="section-title reveal" id="services-heading">Administrative <span>Support Services</span></h2>
-      </div>
-      <p class="section-subtitle reveal" style="max-width:380px;">
-        End-to-end administrative assistance crafted to free your time and amplify your productivity.
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <div class="service-card reveal delay-1">
-        <div class="service-icon-wrap icon-purple">📧</div>
-        <h3>Email Management</h3>
-        <p>Inbox organization, filtering, drafting replies, and keeping your email spotless so you only see what truly matters.</p>
-        <span class="service-tag">Inbox Zero</span>
-      </div>
-
-      <div class="service-card reveal delay-2">
-        <div class="service-icon-wrap icon-cyan">📅</div>
-        <h3>Calendar &amp; Scheduling</h3>
-        <p>Seamless appointment scheduling, meeting coordination, and calendar management to keep your days running on time.</p>
-        <span class="service-tag">Time Management</span>
-      </div>
-
-      <div class="service-card reveal delay-3">
-        <div class="service-icon-wrap icon-amber">📊</div>
-        <h3>Data Entry &amp; Records</h3>
-        <p>Accurate data entry, record updates, and list building that keeps your databases clean, current, and actionable.</p>
-        <span class="service-tag">Accuracy First</span>
-      </div>
-
-      <div class="service-card reveal delay-4">
-        <div class="service-icon-wrap icon-green">☁️</div>
-        <h3>File &amp; Cloud Organization</h3>
-        <p>Structuring and managing your files across cloud platforms — Google Drive, OneDrive, and more — for instant retrieval.</p>
-        <span class="service-tag">Cloud Storage</span>
-      </div>
-
-      <div class="service-card reveal delay-5">
-        <div class="service-icon-wrap icon-pink">📝</div>
-        <h3>Document Formatting &amp; Proofreading</h3>
-        <p>Professional document formatting, typing assistance, and thorough proofreading for polished, error-free output.</p>
-        <span class="service-tag">Quality Writing</span>
-      </div>
-
-      <div class="service-card reveal delay-6">
-        <div class="service-icon-wrap icon-blue">✈️</div>
-        <h3>Travel &amp; Meeting Arrangements</h3>
-        <p>Comprehensive travel booking using Amadeus and full meeting logistics so every trip and conference goes off without a hitch.</p>
-        <span class="service-tag">Amadeus GDS</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== TOOLS ===== -->
-<section id="tools" aria-labelledby="tools-heading">
-  <div class="container">
-    <div style="text-align:center; max-width:600px; margin:0 auto 3.5rem;">
-      <div class="section-tag reveal">Tech Stack</div>
-      <h2 class="section-title reveal" id="tools-heading">Tools &amp; <span>Platforms</span></h2>
-      <p class="section-subtitle reveal" style="margin-bottom:0;">
-        Proficient across leading productivity suites and industry-specific software to hit the ground running.
-      </p>
-    </div>
-
-    <div class="tools-categories">
-
-      <div class="tool-category reveal">
-        <h3>Google Workspace</h3>
-        <div class="tools-row">
-          <div class="tool-badge">
-            <span class="tool-icon">📄</span> Google Docs
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📊</span> Google Sheets
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📁</span> Google Drive
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📅</span> Google Calendar
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📧</span> Gmail
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">🎞️</span> Google Slides
-          </div>
-        </div>
-      </div>
-
-      <div class="tool-category reveal delay-2">
-        <h3>Microsoft Office</h3>
-        <div class="tools-row">
-          <div class="tool-badge">
-            <span class="tool-icon">📝</span> Microsoft Word
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📊</span> Microsoft Excel
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📊</span> PowerPoint
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📧</span> Outlook
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📁</span> OneDrive
-          </div>
-        </div>
-      </div>
-
-      <div class="tool-category reveal delay-3">
-        <h3>Travel &amp; Productivity</h3>
-        <div class="tools-row">
-          <div class="tool-badge">
-            <span class="tool-icon">✈️</span> Amadeus GDS
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📋</span> Trello
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">✅</span> Asana
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">💬</span> Slack
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">📹</span> Zoom
-          </div>
-          <div class="tool-badge">
-            <span class="tool-icon">🗒️</span> Notion
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" aria-labelledby="contact-heading">
-  <div class="container">
-    <div style="text-align:center; max-width:600px; margin:0 auto 3.5rem;">
-      <div class="section-tag reveal">Get In Touch</div>
-      <h2 class="section-title reveal" id="contact-heading">Ready to <span>Work Together?</span></h2>
-      <p class="section-subtitle reveal" style="margin:0 auto;">
-        Let's talk about how I can take those time-consuming tasks off your plate so you can focus on growing your business.
-      </p>
-    </div>
-
-    <div class="contact-grid">
-
-      <div class="contact-info reveal-left">
-        <h3>Let's Start a Conversation</h3>
-        <p>
-          Whether you need ongoing support or help with a one-time project, I'm here to make your workload lighter. Reach out through any of the channels below.
-        </p>
-        <div class="contact-items">
-          <a href="mailto:hello@ronzva.com" class="contact-item" aria-label="Send email">
-            <div class="contact-item-icon icon-purple" aria-hidden="true">📧</div>
-            <div class="contact-item-text">
-              <strong>Email</strong>
-              <span>hello@ronzva.com</span>
-            </div>
-          </a>
-          <a href="https://linkedin.com/in/ronzva" class="contact-item" aria-label="Visit LinkedIn profile" target="_blank" rel="noopener noreferrer">
-            <div class="contact-item-icon icon-cyan" aria-hidden="true">💼</div>
-            <div class="contact-item-text">
-              <strong>LinkedIn</strong>
-              <span>linkedin.com/in/ronzva</span>
-            </div>
-          </a>
-          <div class="contact-item" style="cursor:default;">
-            <div class="contact-item-icon icon-amber" aria-hidden="true">⏰</div>
-            <div class="contact-item-text">
-              <strong>Availability</strong>
-              <span>Mon – Fri, 9 AM – 6 PM (PHT)</span>
-            </div>
-          </div>
-          <div class="contact-item" style="cursor:default;">
-            <div class="contact-item-icon icon-green" aria-hidden="true">🌍</div>
-            <div class="contact-item-text">
-              <strong>Work Type</strong>
-              <span>Remote — Available Worldwide</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal-right">
-        <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Jane" required autocomplete="given-name" />
-            </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Smith" required autocomplete="family-name" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="jane@yourcompany.com" required autocomplete="email" />
-          </div>
-          <div class="form-group">
-            <label for="service">Service Needed</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service…</option>
-              <option value="email">Email Management</option>
-              <option value="calendar">Calendar &amp; Scheduling</option>
-              <option value="data">Data Entry &amp; Records</option>
-              <option value="files">File &amp; Cloud Organization</option>
-              <option value="docs">Document Formatting &amp; Proofreading</option>
-              <option value="travel">Travel &amp; Meeting Arrangements</option>
-              <option value="general">General Administrative Support</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Tell Me About Your Project</label>
-            <textarea id="message" name="message" placeholder="Describe your needs, timeline, and any details that will help me assist you best…" required></textarea>
-          </div>
-          <button type="submit" class="form-submit">
-            <span>Send Message</span> <span aria-hidden="true">→</span>
-          </button>
-        </form>
-        <div id="form-success" class="form-success contact-form" role="alert" aria-live="polite">
-          <span class="success-icon" aria-hidden="true">🎉</span>
-          <h3 style="font-family:var(--font-heading); margin-bottom:0.5rem;">Message Sent!</h3>
-          <p>Thank you for reaching out! I'll get back to you within 24 hours.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer role="contentinfo">
-  <div class="container" style="max-width:700px;">
-    <div class="footer-logo">Ronz<span style="color:var(--cyan)">.</span></div>
-    <p class="footer-tagline">Your dedicated Virtual Assistant — organized, reliable, and always on time.</p>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="#about">About</a>
-      <a href="#strengths">Strengths</a>
-      <a href="#services">Services</a>
-      <a href="#tools">Tools</a>
-      <a href="#contact">Contact</a>
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Home"
+        >Shaira<span style="color: var(--cyan)">.</span></a
+      >
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button
+        class="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
-    <div class="divider"></div>
-    <p class="footer-bottom">
-      &copy; <span id="year"></span> Ronz — Virtual Assistant Portfolio. Built with ♥ and lots of ☕.
-    </p>
-  </div>
-</footer>
 
-<!-- ===== BACK TO TOP ===== -->
-<button id="back-to-top" aria-label="Back to top">↑</button>
+    <!-- ===== HERO ===== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
 
-<script>
-  // Set current year in footer
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-<script src="script.js"></script>
-</body>
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot" aria-hidden="true"></span>
+            Available for new clients
+          </div>
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Shaira</h1>
+          <div class="hero-title-wrapper">
+            <span class="static">Your </span
+            ><span id="typewriter" aria-live="polite"></span
+            ><span class="cursor" aria-hidden="true"></span>
+          </div>
+          <p class="hero-description">
+            A dedicated, detail-oriented Virtual Assistant passionate about
+            helping business owners manage daily tasks efficiently — so you can
+            focus on growing what matters most.
+          </p>
+          <div class="hero-buttons">
+            <a href="#services" class="btn-primary">
+              <span aria-hidden="true">✦</span> Explore Services
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span aria-hidden="true">✉</span> Let's Connect
+            </a>
+            <a
+              href="assets/Pamisa, Shairra Dale D. Resume.pdf"
+              download="Pamisa_Shairra_Dale_Resume.pdf"
+              class="btn-resume"
+              aria-label="Download Shairra's resume as PDF"
+            >
+              <span aria-hidden="true">⬇</span> Download Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-image-glow" aria-hidden="true"></div>
+          <img
+            src="assets/shaira-avatar.png"
+            alt="Shaira — Virtual Assistant"
+            class="hero-avatar-img"
+            draggable="false"
+          />
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal-left">
+            <div class="about-avatar-wrapper">
+              <div class="about-ring" aria-hidden="true"></div>
+              <div class="about-ring about-ring-2" aria-hidden="true"></div>
+              <div
+                class="about-avatar"
+                role="img"
+                aria-label="Virtual Assistant avatar"
+              >
+                💼
+              </div>
+            </div>
+            <div class="about-stats">
+              <div class="stat-card reveal delay-2">
+                <span class="stat-number" data-count="100" data-suffix="%"
+                  >0%</span
+                >
+                <span class="stat-label">Reliability</span>
+              </div>
+              <div class="stat-card reveal delay-3">
+                <span class="stat-number" data-count="24" data-suffix="h"
+                  >0h</span
+                >
+                <span class="stat-label">Turnaround</span>
+              </div>
+              <div class="stat-card reveal delay-4">
+                <span class="stat-number" data-count="10" data-suffix="+"
+                  >0+</span
+                >
+                <span class="stat-label">Tools Mastered</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <div class="section-tag reveal">About Me</div>
+            <h2 class="section-title reveal" id="about-heading">
+              Driven to Help You <span>Do More</span>
+            </h2>
+            <p class="reveal">
+              I am a dedicated and detail-oriented Virtual Assistant with a
+              strong passion for helping business owners and professionals
+              manage their daily tasks efficiently. While I'm new to the
+              industry, I've gained valuable experience and honed practical
+              skills through dedicated practice and self-study.
+            </p>
+            <p class="reveal delay-1">
+              Being organized comes naturally to me — I learn quickly, and I'm
+              committed to providing work that's both precise and always
+              delivered when promised. My aim is simple:
+              <strong style="color: var(--purple-light)"
+                >I manage the tasks that take up too much of your day</strong
+              >, giving you the freedom to focus on expanding your business and
+              focusing on your own expertise.
+            </p>
+            <div class="about-highlights reveal delay-2">
+              <div class="highlight-item">
+                <span class="icon">✅</span> Fast learner & self-starter
+              </div>
+              <div class="highlight-item">
+                <span class="icon">📋</span> Naturally organized
+              </div>
+              <div class="highlight-item">
+                <span class="icon">🎯</span> Deadline-driven
+              </div>
+              <div class="highlight-item">
+                <span class="icon">💬</span> Strong communicator
+              </div>
+              <div class="highlight-item">
+                <span class="icon">🔍</span> Attentive to detail
+              </div>
+              <div class="highlight-item">
+                <span class="icon">🤝</span> Reliable long-term partner
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRENGTHS ===== -->
+    <section id="strengths" aria-labelledby="strengths-heading">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto">
+          <div class="section-tag reveal">Key Strengths</div>
+          <h2 class="section-title reveal" id="strengths-heading">
+            What Sets Me <span>Apart</span>
+          </h2>
+          <p class="section-subtitle reveal">
+            Core qualities that make every collaboration smooth, productive, and
+            worry-free.
+          </p>
+        </div>
+
+        <div class="strengths-grid">
+          <div class="strength-card reveal delay-1">
+            <div class="strength-icon icon-purple">💬</div>
+            <h3 class="strength-title">Clear Communication</h3>
+            <p class="strength-desc">
+              Strong written and verbal English skills ensure every message,
+              email, and document lands with clarity and professionalism.
+            </p>
+          </div>
+
+          <div class="strength-card reveal delay-2">
+            <div class="strength-icon icon-cyan">🗂️</div>
+            <h3 class="strength-title">Highly Organized</h3>
+            <p class="strength-desc">
+              Natural affinity for structure — from filing systems to calendar
+              management — means nothing slips through the cracks.
+            </p>
+          </div>
+
+          <div class="strength-card reveal delay-3">
+            <div class="strength-icon icon-amber">🎯</div>
+            <h3 class="strength-title">Proactive Attitude</h3>
+            <p class="strength-desc">
+              Anticipating needs before they arise and taking initiative to keep
+              projects moving forward without prompting.
+            </p>
+          </div>
+
+          <div class="strength-card reveal delay-4">
+            <div class="strength-icon icon-green">⏰</div>
+            <h3 class="strength-title">Deadline-Driven</h3>
+            <p class="strength-desc">
+              Consistently meeting deadlines with precision — you can count on
+              deliverables arriving on time, every time.
+            </p>
+          </div>
+
+          <div class="strength-card reveal delay-5">
+            <div class="strength-icon icon-pink">🔍</div>
+            <h3 class="strength-title">Attentive to Detail</h3>
+            <p class="strength-desc">
+              Meticulous review of every task ensures accuracy and quality,
+              catching errors before they become problems.
+            </p>
+          </div>
+
+          <div class="strength-card reveal delay-6">
+            <div class="strength-icon icon-blue">📈</div>
+            <h3 class="strength-title">Fast Learner</h3>
+            <p class="strength-desc">
+              Quick to adapt to new tools, workflows, and industries —
+              minimizing ramp-up time and maximizing impact from day one.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-header">
+          <div>
+            <div class="section-tag reveal">What I Can Do</div>
+            <h2 class="section-title reveal" id="services-heading">
+              Administrative <span>Support Services</span>
+            </h2>
+          </div>
+          <p class="section-subtitle reveal" style="max-width: 380px">
+            End-to-end administrative assistance crafted to free your time and
+            amplify your productivity.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal delay-1">
+            <div class="service-icon-wrap icon-purple">📧</div>
+            <h3>Email Management</h3>
+            <p>
+              Inbox organization, filtering, drafting replies, and keeping your
+              email spotless so you only see what truly matters.
+            </p>
+            <span class="service-tag">Inbox Zero</span>
+          </div>
+
+          <div class="service-card reveal delay-2">
+            <div class="service-icon-wrap icon-cyan">📅</div>
+            <h3>Calendar &amp; Scheduling</h3>
+            <p>
+              Seamless appointment scheduling, meeting coordination, and
+              calendar management to keep your days running on time.
+            </p>
+            <span class="service-tag">Time Management</span>
+          </div>
+
+          <div class="service-card reveal delay-3">
+            <div class="service-icon-wrap icon-amber">📊</div>
+            <h3>Data Entry &amp; Records</h3>
+            <p>
+              Accurate data entry, record updates, and list building that keeps
+              your databases clean, current, and actionable.
+            </p>
+            <span class="service-tag">Accuracy First</span>
+          </div>
+
+          <div class="service-card reveal delay-4">
+            <div class="service-icon-wrap icon-green">☁️</div>
+            <h3>File &amp; Cloud Organization</h3>
+            <p>
+              Structuring and managing your files across cloud platforms —
+              Google Drive, OneDrive, and more — for instant retrieval.
+            </p>
+            <span class="service-tag">Cloud Storage</span>
+          </div>
+
+          <div class="service-card reveal delay-5">
+            <div class="service-icon-wrap icon-pink">📝</div>
+            <h3>Document Formatting &amp; Proofreading</h3>
+            <p>
+              Professional document formatting, typing assistance, and thorough
+              proofreading for polished, error-free output.
+            </p>
+            <span class="service-tag">Quality Writing</span>
+          </div>
+
+          <div class="service-card reveal delay-6">
+            <div class="service-icon-wrap icon-blue">✈️</div>
+            <h3>Travel &amp; Meeting Arrangements</h3>
+            <p>
+              Comprehensive travel booking using Amadeus and full meeting
+              logistics so every trip and conference goes off without a hitch.
+            </p>
+            <span class="service-tag">Amadeus GDS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TOOLS ===== -->
+    <section id="tools" aria-labelledby="tools-heading">
+      <div class="container">
+        <div
+          style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem"
+        >
+          <div class="section-tag reveal">Tech Stack</div>
+          <h2 class="section-title reveal" id="tools-heading">
+            Tools &amp; <span>Platforms</span>
+          </h2>
+          <p class="section-subtitle reveal" style="margin-bottom: 0">
+            Proficient across leading productivity suites and industry-specific
+            software to hit the ground running.
+          </p>
+        </div>
+
+        <div class="tools-categories">
+          <div class="tool-category reveal">
+            <h3>Google Workspace</h3>
+            <div class="tools-row">
+              <div class="tool-badge">
+                <span class="tool-icon">📄</span> Google Docs
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📊</span> Google Sheets
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📁</span> Google Drive
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📅</span> Google Calendar
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📧</span> Gmail
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">🎞️</span> Google Slides
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-category reveal delay-2">
+            <h3>Microsoft Office</h3>
+            <div class="tools-row">
+              <div class="tool-badge">
+                <span class="tool-icon">📝</span> Microsoft Word
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📊</span> Microsoft Excel
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📊</span> PowerPoint
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📧</span> Outlook
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📁</span> OneDrive
+              </div>
+            </div>
+          </div>
+
+          <div class="tool-category reveal delay-3">
+            <h3>Travel &amp; Productivity</h3>
+            <div class="tools-row">
+              <div class="tool-badge">
+                <span class="tool-icon">✈️</span> Amadeus GDS
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📋</span> Trello
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">✅</span> Asana
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">💬</span> Slack
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">📹</span> Zoom
+              </div>
+              <div class="tool-badge">
+                <span class="tool-icon">🗒️</span> Notion
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHOWCASE ===== -->
+    <section id="showcase" aria-labelledby="showcase-heading">
+      <div class="container">
+        <div
+          style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem"
+        >
+          <div class="section-tag reveal">My Work</div>
+          <h2 class="section-title reveal" id="showcase-heading">
+            Work <span>Showcase</span>
+          </h2>
+          <p class="section-subtitle reveal" style="margin-bottom: 0">
+            A collection of social media content, graphic designs, and creative
+            assets I've produced for real clients and personal projects.
+          </p>
+        </div>
+
+        <div class="showcase-grid reveal">
+          <div class="showcase-card">
+            <div class="showcase-card-icon">🎨</div>
+            <h3>Social Media Graphics</h3>
+            <p>
+              Branded posts, promotional content, and visual assets crafted for
+              social media campaigns across Instagram and Facebook.
+            </p>
+          </div>
+          <div class="showcase-card delay-2">
+            <div class="showcase-card-icon">💅</div>
+            <h3>Skincare Brand Content</h3>
+            <p>
+              Complete social media content sets for a skincare brand —
+              including product shots, color-palette-aligned layouts, and
+              campaign visuals.
+            </p>
+          </div>
+          <div class="showcase-card delay-3">
+            <div class="showcase-card-icon">🗂️</div>
+            <h3>Content Planning</h3>
+            <p>
+              Content idea boards, format templates, and posting calendars
+              designed to keep brands consistent and on-schedule.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem" class="reveal">
+          <a
+            href="https://drive.google.com/drive/folders/1nQDOMSq4wtdNaXb7bw4aaGCFfdB6jG39"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+          >
+            <span aria-hidden="true">📁</span> View Full Portfolio on Google
+            Drive
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div
+          style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem"
+        >
+          <div class="section-tag reveal">Get In Touch</div>
+          <h2 class="section-title reveal" id="contact-heading">
+            Ready to <span>Work Together?</span>
+          </h2>
+          <p class="section-subtitle reveal" style="margin: 0 auto">
+            Let's talk about how I can take those time-consuming tasks off your
+            plate so you can focus on growing your business.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h3>Let's Start a Conversation</h3>
+            <p>
+              Whether you need ongoing support or help with a one-time project,
+              I'm here to make your workload lighter. Reach out through any of
+              the channels below.
+            </p>
+            <div class="contact-items">
+              <a
+                href="mailto:shairradelapamisa.dc@gmail.com"
+                class="contact-item"
+                aria-label="Send email"
+              >
+                <div class="contact-item-icon icon-purple" aria-hidden="true">
+                  📧
+                </div>
+                <div class="contact-item-text">
+                  <strong>Email</strong>
+                  <span>shairradelapamisa.dc@gmail.com</span>
+                </div>
+              </a>
+
+              <div class="contact-item" style="cursor: default">
+                <div class="contact-item-icon icon-amber" aria-hidden="true">
+                  ⏰
+                </div>
+                <div class="contact-item-text">
+                  <strong>Availability</strong>
+                  <span>Mon – Fri, 9 AM – 6 PM (PHT)</span>
+                </div>
+              </div>
+              <div class="contact-item" style="cursor: default">
+                <div class="contact-item-icon icon-green" aria-hidden="true">
+                  🌍
+                </div>
+                <div class="contact-item-text">
+                  <strong>Work Type</strong>
+                  <span>Remote — Available Worldwide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <form
+              id="contact-form"
+              class="contact-form"
+              novalidate
+              aria-label="Contact form"
+            >
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Jane"
+                    required
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Smith"
+                    required
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@yourcompany.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="email">Email Management</option>
+                  <option value="calendar">Calendar &amp; Scheduling</option>
+                  <option value="data">Data Entry &amp; Records</option>
+                  <option value="files">File &amp; Cloud Organization</option>
+                  <option value="docs">
+                    Document Formatting &amp; Proofreading
+                  </option>
+                  <option value="travel">
+                    Travel &amp; Meeting Arrangements
+                  </option>
+                  <option value="general">
+                    General Administrative Support
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Tell Me About Your Project</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Describe your needs, timeline, and any details that will help me assist you best…"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <span>Send Message</span> <span aria-hidden="true">→</span>
+              </button>
+            </form>
+            <div
+              id="form-success"
+              class="form-success contact-form"
+              role="alert"
+              aria-live="polite"
+            >
+              <span class="success-icon" aria-hidden="true">🎉</span>
+              <h3
+                style="font-family: var(--font-heading); margin-bottom: 0.5rem"
+              >
+                Message Sent!
+              </h3>
+              <p>
+                Thank you for reaching out! I'll get back to you within 24
+                hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer role="contentinfo">
+      <div class="container" style="max-width: 700px">
+        <div class="footer-logo">
+          Shaira<span style="color: var(--cyan)">.</span>
+        </div>
+        <p class="footer-tagline">
+          Your dedicated Virtual Assistant — organized, reliable, and always on
+          time.
+        </p>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#strengths">Strengths</a>
+          <a href="#services">Services</a>
+          <a href="#tools">Tools</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="divider"></div>
+        <p class="footer-bottom">
+          &copy; <span id="year"></span> Shaira — Virtual Assistant Portfolio.
+          Built with ♥ and lots of ☕.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
